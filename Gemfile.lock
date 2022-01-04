@@ -82,6 +82,7 @@ GEM
     ffi (1.15.4)
     globalid (1.0.0)
       activesupport (>= 5.0)
+    hashie (5.0.0)
     i18n (1.8.11)
       concurrent-ruby (~> 1.0)
     jbuilder (2.11.5)
@@ -103,6 +104,14 @@ GEM
     nio4r (2.5.8)
     nokogiri (1.12.5-x86_64-darwin)
       racc (~> 1.4)
+    oauth (0.5.8)
+    omniauth (2.0.4)
+      hashie (>= 3.4.6)
+      rack (>= 1.6.2, < 3)
+      rack-protection
+    omniauth-oauth (1.2.0)
+      oauth
+      omniauth (>= 1.0, < 3)
     orm_adapter (0.5.0)
     pg (1.2.3)
     puma (5.5.2)
@@ -111,6 +120,8 @@ GEM
     rack (2.2.3)
     rack-mini-profiler (2.3.3)
       rack (>= 1.2.0)
+    rack-protection (2.1.0)
+      rack
     rack-proxy (0.7.0)
       rack
     rack-test (1.1.0)
@@ -201,6 +212,8 @@ DEPENDENCIES
   dotenv-rails
   jbuilder (~> 2.7)
   listen (~> 3.3)
+  omniauth
+  omniauth-oauth
   pg (~> 1.1)
   puma (~> 5.0)
   rack-mini-profiler (~> 2.0)
