@@ -45,6 +45,7 @@ group :development do
   gem 'devise'
   gem 'omniauth'
   gem 'omniauth-oauth'
+  gem 'omniauth-line'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
