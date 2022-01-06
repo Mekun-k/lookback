@@ -46,6 +46,7 @@ group :development do
   gem 'omniauth'
   gem 'omniauth-oauth'
   gem 'omniauth-line'
+  gem "omniauth-rails_csrf_protection"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
