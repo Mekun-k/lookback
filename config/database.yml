@@ -82,5 +82,5 @@ test:
 production:
   <<: *default
   database: lookback_production
-  username: lookback
+  username: <%= ENV['LOOKBACK_DATABASE_NAME'] %>
   password: <%= ENV['LOOKBACK_DATABASE_PASSWORD'] %>
